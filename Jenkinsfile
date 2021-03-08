@@ -13,12 +13,7 @@ node {
         app = docker.build("vinaykumarnomula/node.js")
     }
 
-    stage('Test image') {
-        
-        app.inside {
-            echo "Tests passed"
-        }
-    }
+    
 
     stage('Push image') {
         /* 
